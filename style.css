@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+body{
+    margin: 0;
+    width: 100%;
+    font-family: "Comfortaa";
+}
+
+.main-nav{
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.main-li{
+    margin-right: 40%;
+    margin-left: 5%;
+    transition: color 1s;
+    
+}
+
+.main-li:hover{
+    color: rgb(0, 205, 0);
+    
+}
+
+.main-li1:after{
+    width: 0%;
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: white;
+    transition: 1s;
+}
+
+.main-li1:hover:after{
+    background-color: rgb(0, 205, 0);
+    width: 100%;
+}
+
+.main-li1:hover{
+    color: rgb(0, 205, 0);
+}
+
+.main-a{
+    color: white;
+    font-size: 2rem;
+}
+
+.nav-a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+}
+
+.main-li1{
+    transition: color 1s;
+    margin-left: 5%;
+}
+
+.main-nav li{
+    display: inline-block;
+}
+
+.fullscreen-bg {
+    overflow: hidden;
+    z-index: -100;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top:45%;
+}
+ 
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.overlay {
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+.overlay h1 {
+    text-align:center;
+    color:#fff;
+    font-size: 70px;
+    margin-top:17%;
+}
+
+.art{
+    width: 70%;
+    margin: auto;
+}
+
+.art h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.art p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.art hr{
+    width: 100%;
+    color: rgba(0, 0, 0, 0,1);
+}
+
+.container-countries{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.card-a{
+    color: black;
+    text-decoration: none;
+    flex-basis: 30%;
+}
+
+.country-card p{
+    font-size: 1rem;
+    text-align: left;
+}
+
+.country-card img{
+    margin-left: 5%;
+}
+
+.country-card{
+    padding: 10px;
+    transition: box-shadow 1s;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+
+.country-card:hover{
+    box-shadow: 0 0 10px 10px rgba(221, 221, 221, 1);
+}
+
+.foot p{
+    font-size: 0.8rem;
+}
+
+.country-bg{
+    width: 100%;
+    height: 100%;
+}
+
+.country-bg img{
+    width: 100%;
+}
+
+.country-bg-div{
+    position: absolute;
+    width: 100%;
+    height: 66%;
+    left: 0;
+    top: 0;
+}
+
+.country-bg-div h1{
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    font-size: 3.5rem;
+    color: white;
+    top: 65%;
+}
+
+.head{
+    height: 100%;
+}
+
+.head-p{
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.country-nav{
+    display: inline-block;
+    padding: 5px;
+    padding-right: 10px;
+    border: solid 1px black;
+    margin-left: 10%;
+    transition: 1s;
+    max-height: 500px;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.country-nav h2{
+    display: inline-block;
+    font-size: 36px;
+}
+
+.country-art{
+    width: 80%; 
+    margin-left: 10%;
+}
+
+.country-nav button{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    box-shadow: none;
+    background-color: white;
+    border: none;
+    position: relative;
+    left: 1%;
+    z-index: 101;
+    transition: 1s;
+    background-image: url(pictures/arrow.svg);
+    background-size: 100% 100%;
+}
+
+.country-nav-a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-open{
+    transition: max-height 1s;
+    max-height: 90px;
+    overflow: hidden;
+}
+
+.art-img{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.menu-open button{
+    transform: rotate(180deg);
+}
+
+@media (max-width: 1024px){
+    .card-a{
+        flex-basis: 45%;
+        margin-top: 20px;
+    }
+    
+    .main-li{
+        margin-right: 25%;
+    }
+    
+    .nav-a{
+        font-size: 1rem;
+    }
+    
+    .country-bg-div h1{
+        font-size: 3rem;
+        top: 30%;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .card-a{
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+    
+    .overlay{
+        background-image: url(pictures/Bg_Sea.jpg); 
+        background-size: 100% 100%; 
+    }
+    .overlay h1{
+        font-size: 2rem;
+    }
+    .art p{
+        font-size: 1rem;
+    }
+    
+    .main-li{
+        margin-right: 30%;
+    }
+    
+    .nav-a{
+        font-size: 0.8rem;
+    }
+    
+    .country-bg img{
+        width: 120%;
+    }
+    
+    .country-bg-div h1{
+        top: 40%;
+        font-size: 2rem;
+    }
+}
